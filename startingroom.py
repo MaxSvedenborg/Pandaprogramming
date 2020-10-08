@@ -1,33 +1,51 @@
-import pygame
 import time
 import sys
 import random
 
 #def starting_area (new_player):
-
-   starting_text = "Hello, and welcome to Panda programing, a learning-based programming rpg for you to solve."
-    for char in starting_text:
-        timer_value1 = random.uniform(0.01, 0.6)
+def main():
+#lägg in user_name +1 så man aldrig automatiskt får detta meddelande två gånger. lägg in !help för commandon - dvs köra om välkomstscriptet.
+    starting_message = "Hello, and welcome to Panda programming! "
+    for char in starting_message:
+        timer_value1 = random.uniform(0.01, 0.1)
         sys.stdout.write(char)
         time.sleep(timer_value1)
 
-#ha dessa två prints i samma print, men med en timer mellan dem på att andra raden skrivs ut efter 3 sekunder.
-print ("Before we start, please enter your name in the textbox below")
-user_name = input().isalpha
+    time.sleep(2)
 
-    if user_name:
-        welcome_text = print ("Hello", this is a test text to see if all works fine." + user_name)
+    ask_user_name = "\nBefore we start,\n"
+    for char in ask_user_name:
+        timer_value2 = random.uniform(0.01, 0.1)
+        sys.stdout.write(char)
+        time.sleep(timer_value2)
 
-        for char in text:
-            2 = random.uniform(0.01, 0.6)
+    time.sleep(1)
+
+    while True:
+        error_message_1 = "Please enter your name in the textbox below, with only alphabetic characters.\n"
+        for char in error_message_1:
+            timer_value4 = random.uniform(0.01, 0.1)
             sys.stdout.write(char)
-            time.sleep(timer_value2)
-    else:
-        print ("Please enter your name in the textbox below, with only alphabetic characters.")
+            time.sleep(timer_value4)
+        user_name = input()
+
+        if user_name.isalpha():
+            welcome_message = (f"\nHello, {user_name}, it is nice to have you here!")
+            for char in welcome_message:
+                timer_value3 = random.uniform(0.01, 0.1)
+                sys.stdout.write(char)
+                time.sleep(timer_value3)
+            break
+
+
+#fyll på med guide-linjer
 
 
 
-new_player = newcomer()
 
-if newcomer == 0:
-    print welcome_msg
+#new_player = newcomer()
+
+# if newcomer == 0:
+    #print welcome_msg
+if __name__ == "__main__":
+    main()
