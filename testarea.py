@@ -1,15 +1,21 @@
-def main():
-    import time
-    import sys
-    import random
+import time
+import sys
+import random
+while True:
+    welcome_room = 0
 
-    text = "Hello, this is a test text to see if all works fine."
-
-    for char in text:
-        timer_value = random.uniform(0.01, 0.6)
-        sys.stdout.write(char)
-        time.sleep(timer_value)
+    def welcome_room():
 
 
-if __name__ == "__main__":
-    main()
+
+        if welcome_room.counter < 1:
+            def function1():
+                print("Hello from first choice")
+                function1()
+        elif welcome_room.counter >= 2:
+            def function2():
+                print("Hello from second choice")
+                function2()
+
+    welcome_room.counter += 1
+    welcome_room()
