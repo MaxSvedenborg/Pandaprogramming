@@ -1,6 +1,4 @@
-def main():
-    pass
+def user_door_choice():
 
 
-if __name__ == "__main__":
-    main()
+    user_door_choice()
