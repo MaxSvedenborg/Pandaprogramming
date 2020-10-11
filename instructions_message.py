@@ -35,4 +35,3 @@ def instructions_message():
             break
 
 
-instructions_message()

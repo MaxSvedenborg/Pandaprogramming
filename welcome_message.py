@@ -40,4 +40,3 @@ def welcome_message():
     time.sleep(1)
 
 
-welcome_message()
