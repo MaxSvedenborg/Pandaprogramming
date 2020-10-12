@@ -5,10 +5,10 @@ import random
 from welcome_message_handler import *
 
 
-def starting_room():
+class FirstRoom:
 
     welcome_message_counter()
 
 
-starting_room()
+
 
