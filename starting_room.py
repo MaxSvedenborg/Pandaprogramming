@@ -1,14 +1,15 @@
 import time
-import sys
 import random
+import sys
 
-from welcome_message_handler import *
+from welcome_message import welcome_message
+from instructions_message import instructions_message
 
 
 class FirstRoom:
 
-    welcome_message_counter()
-
+    welcome_message()
+    instructions_message()
 
 
 

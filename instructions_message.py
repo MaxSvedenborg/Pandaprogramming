@@ -1,6 +1,7 @@
-import random
 import time
+import random
 import sys
+from adventure_message import adventure_choice
 
 
 def instructions_message():
@@ -16,6 +17,7 @@ def instructions_message():
         "6. You win by gaining 10 PandaCash as that is the price for freedom.\n\n"
         "If you would like to see the instructions again,"
         "TYPE 'instructions' in chat while being in the starting room.\n"
+        "If you would like to exit the game, type exit in chat at any time.\n"
         "if not, TYPE 'continue' to start your journey!\n")
 
     for char in guide_main_goal_message:
@@ -32,6 +34,11 @@ def instructions_message():
                 sys.stdout.write(char)
                 time.sleep(timer_value1)
         elif user_instructions_choice == "continue":
-            break
+            adventure_choice()
+        elif user_instructions_choice == "exit":
+            print("Are you sure you want to exit the game? Type yes/no")
+            user_choice_exit2 = input().lower()
+            if user_choice_exit2 == "yes":
+                exit()
 
 
