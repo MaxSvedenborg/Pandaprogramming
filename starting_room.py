@@ -11,6 +11,7 @@ class FirstRoom:
 
     welcome_message()
     instructions_message()
-    menu_one()
+    while True:
+        menu_one()
 
 

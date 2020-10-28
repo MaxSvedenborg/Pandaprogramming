@@ -15,9 +15,9 @@ def instructions_message():
         "5. If your health drops below 1, the game will end and you will have to start over.\n"
         "6. You win by gaining 10 PandaCash as that is the price for freedom.\n\n"
         "If you would like to see the instructions again,"
-        "TYPE 'instructions' in chat while being in the starting room.\n"
+        "Type 'instructions' in chat while being in the starting room.\n"
         "If you would like to exit the game, type exit in chat at any time.\n"
-        "if not, TYPE 'continue' to start your journey!\n")
+        "if not, type 'adventure' to start your journey!\n")
 
     for char in guide_main_goal_message:
         timer_value1 = random.uniform(0.01, 0.02)

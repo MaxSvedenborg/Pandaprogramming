@@ -3,8 +3,8 @@ from starting_room_normal import starting_room_normal
 
 
 def door_choice():
-
-    while True:
+    in_choice = True
+    while in_choice:
 
         user_adventure_choice = input().lower()
         if user_adventure_choice == "yes":
@@ -13,6 +13,7 @@ def door_choice():
             print("You back away from the door.\n\n")
             time.sleep(2)
             starting_room_normal()
+            in_choice = False
         elif user_adventure_choice == "exit":
             print("Are you sure you want to exit the game? Type yes/no")
             user_choice_exit2 = input().lower()
