@@ -16,4 +16,5 @@ def menu_one():
         if user_choice_exit1 == "yes":
             exit()
         elif user_choice_exit1 == "no":
-            print("Available commands are: 'instructions', 'adventure', 'exit'")
+            print("Available commands are: 'instructions' to get the instructions, "
+                  "'adventure' to go on adventure, 'exit' to exit the game.")
