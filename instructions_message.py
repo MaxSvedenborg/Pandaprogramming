@@ -1,7 +1,6 @@
 import time
 import random
 import sys
-from adventure_message import adventure_choice
 
 
 def instructions_message():
@@ -25,20 +24,6 @@ def instructions_message():
         sys.stdout.write(char)
         time.sleep(timer_value1)
 
-    while True:
 
-        user_instructions_choice = input().lower()
-        if user_instructions_choice == "instructions":
-            for char in guide_main_goal_message:
-                timer_value1 = random.uniform(0.01, 0.02)
-                sys.stdout.write(char)
-                time.sleep(timer_value1)
-        elif user_instructions_choice == "continue":
-            adventure_choice()
-        elif user_instructions_choice == "exit":
-            print("Are you sure you want to exit the game? Type yes/no")
-            user_choice_exit2 = input().lower()
-            if user_choice_exit2 == "yes":
-                exit()
 
 

@@ -1,8 +1,7 @@
 import time
 import random
 import sys
-
-from starting_room_normal import starting_room_normal
+from adventure_door_choice import door_choice
 
 
 def adventure_choice():
@@ -17,19 +16,5 @@ def adventure_choice():
         sys.stdout.write(char)
         time.sleep(timer_value1)
 
-    while True:
-
-        user_adventure_choice = input().lower()
-        if user_adventure_choice == "yes":
-            print("questroom method insert here")
-        elif user_adventure_choice == "no":
-            print("You back away from the door.\n\n")
-            time.sleep(2)
-            starting_room_normal()
-        elif user_adventure_choice == "exit":
-            print("Are you sure you want to exit the game? Type yes/no")
-            user_choice_exit2 = input().lower()
-            if user_choice_exit2 == "yes":
-                exit()
-
+    door_choice()
 
