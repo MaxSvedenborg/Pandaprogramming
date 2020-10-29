@@ -2,6 +2,7 @@ import random
 import sys
 import time
 from starting_room_normal import starting_room_normal
+from if_method import if_method_quest
 
 
 def quest_room_welcome():
@@ -22,7 +23,8 @@ def quest_room_welcome():
     while in_choice:
         user_quest_room_choice = input().lower()
         if user_quest_room_choice == "if":
-            print("if-sats task metoden initating")
+            if_method_quest()
+            in_choice = False
         elif user_quest_room_choice == "back":
             print("You turn around and head back to the starting room.\n\n")
             time.sleep(2)
