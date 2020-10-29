@@ -2,6 +2,7 @@ import time
 import random
 import sys
 from starting_room_normal import starting_room_normal
+from health_info import health_info
 
 
 def if_method_quest():
@@ -24,7 +25,7 @@ def if_method_quest():
         sys.stdout.write(char)
         time.sleep(timer_value1)
 
-    time.sleep(2)
+    time.sleep(1)
 
     if_method_task = (
         "\nType in chat the final value of X, as an integer.\n"
@@ -61,5 +62,7 @@ def if_method_quest():
                       " return to starting room, or 'exit' to exit the game.")
         while user_if_method_choice not in ("5", "back", "exit"):
             print("you lost a life")
+            lives -= 1
+            health_info(lives)
             break
 
