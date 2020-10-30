@@ -1,0 +1,17 @@
+Dokumentation för programmet PandaProgramming:
+
+Programmet går ut på att via enkla kommandon kunna navigera sig runt ett textbaserat scenario.
+Man använder korta kommandon som är direkt länkade till vad de gör, back, yes, no et c.
+Programmet i sig är skrivet på ett objektorienterat sätt.
+
+Ambitionen med programmet är högre än dess nuvarande status, likt ambitionen ifrån början - där spelet
+skall vara både grafiskt samt ljudinkluderat, men jag har ändå fått fast grunden i det hela, från att starta från scratch,
+vilket jag tyckt var det svåraste hitills. Nu är det bara att fortsätta i strukturen som är satt beroende på hur stort
+program man vill ha.
+
+Jag har en hel lista på saker att fortsätta utöka projektet med men kände att det kändes som så många lösa trådar för att
+få ihop till inlämningen att jag istället valde att ta bort dem och skala ner programmet till ett någorlunda komplett paket.
+Programmet i sig ser lite ut för världen, men jag har ändå stött på en hel del problem som jag löst, vilket i sig fått
+in mig på en hel del saker som är utanför programmet - så det har varit väldigt lärorikt på det sättet, jagandet av lösningar.
+
+// Max Svedenborg.
