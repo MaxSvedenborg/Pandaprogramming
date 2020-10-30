@@ -1,4 +1,7 @@
 from starting_room import FirstRoom
+import time
+import random
+import sys
 
 
 def main():
