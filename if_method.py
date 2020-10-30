@@ -2,15 +2,14 @@ import time
 import random
 import sys
 from starting_room_normal import starting_room_normal
-from health_info import health_info
 
 
 def if_method_quest():
 
     if_method_message = (
         "\n\nThe goal here is to understand the if-statement.\n"
-        "If you succeed, you will be granted 10 points, "
-        "but if you don't you will loose 1 heart per try.\n" 
+        "Type in the value of X, if you enter wrong value you will be teleported to the starting room."
+        "\nGood luck!\n\n" 
         "An if-statement is built up starting with an "
         "if-statement followed by an condition between two values followed by a ':'" 
         " followed by an intended code on the next line. \n"
@@ -29,7 +28,7 @@ def if_method_quest():
 
     if_method_task = (
         "\nType in chat the final value of X, as an integer.\n"
-        "If you succeed, you will be granted 10 points.\n\n"
+        "If you succeed, you will complete this task.\n\n"
         "x, y = 3, 20 \n"
         "if y > x:\n"
         "   x = 5\n"
@@ -46,7 +45,9 @@ def if_method_quest():
     while in_choice:
         user_if_method_choice = input().lower()
         if user_if_method_choice == "5":
-            print("wincondition för tasken")
+            print("You are right! You completed this task.")
+            starting_room_normal()
+            in_choice = False
         elif user_if_method_choice == "back":
             print("You turn around and head back to the starting room.\n\n")
             time.sleep(2)
@@ -60,9 +61,10 @@ def if_method_quest():
             elif user_choice_exit2 == "no":
                 print("Available commands are: 'back' to"
                       " return to starting room, or 'exit' to exit the game.")
-        while user_if_method_choice not in ("5", "back", "exit"):
-            print("you lost a life")
-            lives -= 1
-            health_info(lives)
-            break
+        elif user_if_method_choice not in ("5", "back", "exit"):
+            print("Wrong value on X! Try again.")
+            time.sleep(1)
+            starting_room_normal()
+            in_choice = False
+
 

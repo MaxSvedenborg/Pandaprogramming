@@ -10,7 +10,7 @@ def quest_room_welcome():
     quest_room_message = (
         "\n\nYou enter a room containing various tasks.\n" 
         "Choose the task you want to do by typing it's name in chat. " 
-        "Current task's available: 'if'. \n\n"
+        "\nCurrent task's available: 'if'. \n\n"
         "If you want to back to the starting room, type 'back',\n"
         "or if you want to exit, type 'exit'.\n\n")
 
